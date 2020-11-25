@@ -1,12 +1,12 @@
 name: workflow a
 
 on:
-  check-suite:
+  check_suite:
     types: [completed]
 
 jobs:
   one:
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: dump event
         env:
