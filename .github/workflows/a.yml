@@ -1,0 +1,14 @@
+name: workflow a
+
+on:
+  check-suite:
+    types: [completed]
+
+jobs:
+  one:
+    runs-on: unbuntu-latest
+    steps:
+      - name: dump event
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo $GITHUB_CONTEXT
