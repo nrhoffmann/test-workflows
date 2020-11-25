@@ -1,8 +1,6 @@
 name: workflow a
 
-on:
-  check_run:
-    types: [completed]
+on: status
 
 jobs:
   one:
