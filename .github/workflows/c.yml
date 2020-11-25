@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: wait
-        id: waitforstatuschecks
-        uses: "WyriHaximus/github-action-wait-for-status@v2"
+        uses: WyriHaximus/github-action-wait-for-status@0.1.0
         with:
           ignoreActions: one-c
           checkInterval: 10 # this is the default
