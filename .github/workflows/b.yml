@@ -3,7 +3,7 @@ name: workflow b
 on:
   push:
     branches:
-     - 'patch/*'
+     - '**'
 
 jobs:
   one:
