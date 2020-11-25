@@ -1,0 +1,13 @@
+name: workflow b
+
+on:
+  push:
+    branches:
+     - 'patch/*'
+
+jobs:
+  one:
+    runs-on: unbuntu-latest
+    steps:
+     - name: wait for continue
+       uses: mxschmitt/action-tmate@v3
