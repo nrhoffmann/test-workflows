@@ -6,7 +6,7 @@ on:
      - '**'
 
 jobs:
-  one:
+  one-b:
     runs-on: ubuntu-latest
     steps:
      - name: wait for continue

@@ -1,0 +1,21 @@
+name: workflow c
+
+on:
+  push:
+    branches:
+     - '**'
+
+jobs:
+  one-c:
+    runs-on: ubuntu-latest
+    steps:
+      - name: wait
+        id: waitforstatuschecks
+        uses: "WyriHaximus/github-action-wait-for-status@v2"
+        with:
+          ignoreActions: one-c
+          checkInterval: 10 # this is the default
+      - name: dump context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo $GITHUB_CONTEXT

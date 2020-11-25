@@ -3,10 +3,10 @@ name: workflow a
 on: status
 
 jobs:
-  one:
+  one-a:
     runs-on: ubuntu-latest
     steps:
-      - name: dump event
+      - name: dump context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo $GITHUB_CONTEXT
