@@ -14,6 +14,8 @@ jobs:
         with:
           ignoreActions: one-c
           checkInterval: 10 # this is the default
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"  
       - name: dump context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
