@@ -6,6 +6,8 @@ jobs:
   one-a:
     runs-on: ubuntu-latest
     steps:
+      - name: try dotnet test
+        run: dotnet test
       - name: dump context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
