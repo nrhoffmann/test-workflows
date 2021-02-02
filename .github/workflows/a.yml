@@ -1,6 +1,6 @@
 name: workflow a
 
-on: status
+on: push
 
 jobs:
   one-a:
