@@ -8,7 +8,7 @@ namespace test_workflows
         [Fact]
         public void Test1()
         {
-            Console.WriteLine('It passed!')
+            Console.WriteLine("It passed!");
         }
     }
 }
